@@ -16,7 +16,7 @@ public class StudentController {
 	}
 
 	@RequestMapping(value = "/addStudent", method = RequestMethod.POST)
-	public String addStudent(@ModelAttribute("Student") Student student, ModelMap model) {
+	public String addStudent(@ModelAttribute Student student, ModelMap model) {
 		model.addAttribute("name", student.getName());
 		model.addAttribute("age", student.getAge());
 		model.addAttribute("id", student.getId());
